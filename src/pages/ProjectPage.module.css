@@ -1,0 +1,97 @@
+.main {
+  width: 100%;
+}
+
+/* Header centralizado, coluna estreita */
+.header {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 24px 48px;
+  text-align: center;
+}
+
+.year {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Esconder tags na página de projeto (não aparecem no modelo) */
+.tags {
+  display: none;
+}
+
+/* Galeria full-width, sem margens */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.galleryImg {
+  width: 100%;
+  display: block;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backTop {
+  display: flex;
+  justify-content: center;
+  padding: 56px 40px;
+}
+
+.backTopBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.backTopBtn:hover {
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 40px 20px 36px;
+  }
+}

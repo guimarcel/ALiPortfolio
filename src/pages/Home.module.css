@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+  width: 100%;
+  padding: 120px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://cdn.myportfolio.com/b17b666e-7d24-4175-a143-46b2fc3c6eb8/d4bf9181-2e7e-4ad2-a24b-593ce5395b07_rwc_102x56x1706x966x4096.png?h=9d2cb4e3e6aa41b983ab00aceffab1e0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(25, 25, 25, 0.5);
+  pointer-events: none;
+}
+
+.heroTitle {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(40px, 7vw, 96px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+  max-width: 900px;
+  margin-bottom: 24px;
+}
+
+.heroSub {
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 24px 72px;
+  }
+}
