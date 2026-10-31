@@ -5,6 +5,7 @@
   --card-hover: rgba(255, 255, 255, 0.05);
   --border: rgba(255, 255, 255, 0.1);
   --font: "DM Sans", system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", serif;
   --navbar-height: 64px;
 }
 

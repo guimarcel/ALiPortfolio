@@ -14,7 +14,7 @@ export default function YouMayAlsoLike({ currentSlug, allProjects }) {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>You may also like</h2>
+      <h2 className={styles.heading}>More work</h2>
       <div className={styles.grid}>
         {others.map((project) => (
           <Link key={project.id} to={project.link} className={styles.card}>

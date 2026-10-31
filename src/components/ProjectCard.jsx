@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import styles from "./ProjectCard.module.css";
 
-export default function ProjectCard({ project, style }) {
+export default function ProjectCard({ project }) {
   return (
-    <Link to={project.link} className={styles.card} style={style}>
+    <Link to={project.link} className={styles.card}>
       <div className={styles.imageWrapper}>
         <img src={project.cover} alt={project.title} loading="lazy" />
       </div>

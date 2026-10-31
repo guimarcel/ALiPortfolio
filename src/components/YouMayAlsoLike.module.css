@@ -36,40 +36,38 @@
   transform: scale(1.03);
 }
 
-/* Overlay branco com transparência, aparece no hover */
 .overlay {
   position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0);
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0);
   transition: background 0.35s ease;
   padding: 20px;
-  text-align: center;
 }
 
 .card:hover .overlay {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .overlayTitle {
-  font-size: 14px;
-  font-weight: 500;
-  color: #111;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
   opacity: 0;
-  transform: translateY(6px);
+  transform: translateY(4px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .overlayYear {
   font-size: 12px;
   font-weight: 300;
-  color: #444;
+  color: rgba(255, 255, 255, 0.6);
   opacity: 0;
-  transform: translateY(6px);
+  transform: translateY(4px);
   transition: opacity 0.3s ease 0.05s, transform 0.3s ease 0.05s;
 }
 

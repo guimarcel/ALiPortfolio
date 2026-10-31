@@ -15,9 +15,9 @@ export default function Home() {
       <main>
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Designing experiences that move beyond the screen
+            Art Direction &<br />Graphic Design
           </h1>
-          <p className={styles.heroSub}>Explore my work.</p>
+          <p className={styles.heroSub}>São Paulo, Brasil</p>
         </section>
 
         <ProjectGrid projects={projects} />

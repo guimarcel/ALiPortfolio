@@ -12,7 +12,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         className={styles.link}
       >
-        Follow my journey on LinkedIn
+        LinkedIn
       </a>
     </footer>
   );

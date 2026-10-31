@@ -72,7 +72,7 @@ export default function ProjectPage() {
             className={styles.backTopBtn}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            Back to Top ↑
+            Back to top
           </button>
         </div>
 
